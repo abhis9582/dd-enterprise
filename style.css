@@ -8,6 +8,9 @@ header {
     background-color: var(--header-bg);
 }
 
+.header-bg {
+    background-color: var(--header-bg);
+}
 .btn-dd-enterprise {
     background: var(--heading-color) !important;
     color: #fff !important;
