@@ -15,7 +15,7 @@
 
 <body>
     <!-- header starts here  -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
+    <nav class="navbar navbar-expand-lg navbar-light px-3 header-bg">
         <a class="navbar-brand fw-bold" href="#">DD Enterprises</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,18 +70,21 @@
     <!-- about us section starts here  -->
     <section class="about-us-section">
         <h1 class="text-center pt-5">About DD Enterprises</h1>
-        <p class="text-center">Crafting beauty and elegance through our exquisite imitation jewelry</p>
+        <p class="text-center px-3 px-md-0 mb-5">
+            Crafting beauty and elegance through our exquisite imitation jewelry
+        </p>
+
         <div class="container mb-5">
-            <div class="row align-items-center">
+            <div class="row align-items-center gy-4">
                 <!-- Text Section -->
-                <div class="col-12 col-md-6 mb-4 mb-md-0">
-                    <div class="border p-3 rounded-2 bg-white">
-                        <h2>Our Objective</h2>
+                <div class="col-12 col-md-6">
+                    <div class="border p-4 rounded-3 bg-white shadow-sm h-100">
+                        <h2 class="h4">Our Objective</h2>
                         <p>
                             At DD Enterprises, our primary objective is to provide high-quality, fashionable, and
-                            affordable
-                            imitation jewelry to customers across India. We aim to be the leading choice for individuals
-                            seeking stylish accessories that complement their unique personalities and outfits.
+                            affordable imitation jewelry to customers across India. We aim to be the leading choice
+                            for individuals seeking stylish accessories that complement their unique personalities
+                            and outfits.
                         </p>
                         <ul>
                             <li>To offer a diverse range of contemporary and traditional designs.</li>
@@ -95,19 +98,19 @@
                 <!-- Image Section -->
                 <div class="col-12 col-md-6 text-center">
                     <img src="https://th.bing.com/th/id/OIP.Xv9dIaQaXBsY1BQKUCFbGQHaE8?r=0&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3"
-                        alt="display_image" class="img-fluid rounded shadow-sm">
+                        alt="display_image" class="img-fluid rounded shadow-sm w-100 h-auto">
                 </div>
             </div>
         </div>
+
         <div class="container pb-5">
-            <div class="border rounded-2 p-4 bg-white">
-                <h2>Who We Are</h2>
+            <div class="border rounded-3 p-4 bg-white shadow-sm">
+                <h2 class="h4">Who We Are</h2>
                 <p>
-                    DD Enterprises is a passionate venture dedicated to the world of imitation jewelry. We
-                    understand the power of accessories in transforming an ensemble and boosting confidence.
-                    Our journey began with a simple idea: to bring stunning jewelry designs, typically associated
-                    with high-end luxury, to a broader audience without compromising on quality or aesthetic
-                    appeal.
+                    DD Enterprises is a passionate venture dedicated to the world of imitation jewelry. We understand
+                    the power of accessories in transforming an ensemble and boosting confidence. Our journey began
+                    with a simple idea: to bring stunning jewelry designs, typically associated with high-end luxury,
+                    to a broader audience without compromising on quality or aesthetic appeal.
                 </p>
                 <p>
                     We meticulously curate and craft pieces for both women and men, ensuring each item reflects
@@ -118,62 +121,79 @@
             </div>
         </div>
     </section>
+
     <!-- about us section ends here  -->
 
     <!-- what we deal section starts here  -->
     <section class="container-fluid what-we-deal py-5">
-        <div class="container mt-5">
-            <div>
-                <h2 class="text-center">What We Deal in</h2>
-                <div class="text-center d-flex justify-content-center mt-5">
-                    <p class="w-75">Explore our curated collection of imitation jewelry for women and men, crafted with
-                        precision
-                        and style.
-                    </p>
-                </div>
+        <div class="container">
+            <!-- Heading Section -->
+            <div class="text-center">
+                <h2 class="fw-bold">What We Deal in</h2>
+                <p class="mt-4 mx-auto" style="max-width: 720px;">
+                    Explore our curated collection of imitation jewelry for women and men, crafted with precision and
+                    style.
+                </p>
             </div>
-            <div class="product-images mt-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://th.bing.com/th/id/R.a4fb98fb05fcf7a97beb34348c30ee41?rik=25wZrIRGyMap%2bA&riu=http%3a%2f%2fpremiumjeweller.com%2fimges%2fPremium+Website+6.jpg&ehk=iYFoRdVlOwXTUHCUEI4NWKVtxQII4yBOZPqrp1ALUQ8%3d&risl=&pid=ImgRaw&r=0"
-                                alt="" style="height: 400px;">
-                            <div class="ms-3 mt-3">
-                                <h4>Vintage Singet Ring</h4>
-                                <p>Men's Jwellery</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit</p>
-                            </div>
-                            <button class="mx-3 mb-3 btn border">
-                                <i class="fas fa-shopping-cart"></i>
-                                View Details</button>
+
+            <!-- Product Cards -->
+            <div class="row g-4 mt-5">
+                <!-- Card 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://th.bing.com/th/id/R.a4fb98fb05fcf7a97beb34348c30ee41?rik=25wZrIRGyMap%2bA&riu=http%3a%2f%2fpremiumjeweller.com%2fimges%2fPremium+Website+6.jpg&ehk=iYFoRdVlOwXTUHCUEI4NWKVtxQII4yBOZPqrp1ALUQ8%3d&risl=&pid=ImgRaw&r=0"
+                            alt="Vintage Signet Ring" class="card-img-top img-fluid"
+                            style="object-fit: cover; height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Signet Ring</h5>
+                            <p class="card-subtitle text-muted">Men's Jewelry</p>
+                            <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-dark w-100">
+                                <i class="fas fa-shopping-cart me-2"></i> View Details
+                            </button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://th.bing.com/th/id/OIP.RMXlvCs9Ddj9_ZKaq2oq6wHaHa?r=0&w=600&h=600&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3"
-                                alt="" style="height: 400px;">
-                            <div class="ms-3 mt-3">
-                                <h4>Vintage Singet Ring</h4>
-                                <p>Men's Jwellery</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit</p>
-                            </div>
-                            <button class="mx-3 mb-3 btn border">
-                                <i class="fas fa-shopping-cart"></i>
-                                View Details</button>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://th.bing.com/th/id/OIP.RMXlvCs9Ddj9_ZKaq2oq6wHaHa?r=0&w=600&h=600&rs=1&pid=ImgDetMain&cb=idpwebp1&o=7&rm=3"
+                            alt="Men's Jewelry" class="card-img-top img-fluid"
+                            style="object-fit: cover; height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Elegant Cuff Bracelet</h5>
+                            <p class="card-subtitle text-muted">Men's Jewelry</p>
+                            <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-dark w-100">
+                                <i class="fas fa-shopping-cart me-2"></i> View Details
+                            </button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="https://th.bing.com/th/id/OPAC.RZeTD50DZkNR8Q474C474?o=5&pid=21.1&w=160&h=220&dpr=1.3&cb=idpwebp1&o=7&rm=3"
-                                alt="" style="height: 400px;">
-                            <div class="ms-3 mt-3">
-                                <h4>Vintage Singet Ring</h4>
-                                <p>Men's Jwellery</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit</p>
-                            </div>
-                            <button class="mx-3 mb-3 btn border">
-                                <i class="fas fa-shopping-cart"></i>
-                                View Details</button>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://th.bing.com/th/id/OPAC.RZeTD50DZkNR8Q474C474?o=5&pid=21.1&w=160&h=220&dpr=1.3&cb=idpwebp1&o=7&rm=3"
+                            alt="Classic Pendant" class="card-img-top img-fluid"
+                            style="object-fit: cover; height: 300px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Classic Pendant</h5>
+                            <p class="card-subtitle text-muted">Men's Jewelry</p>
+                            <p class="card-text mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-white border-0">
+                            <button class="btn btn-outline-dark w-100">
+                                <i class="fas fa-shopping-cart me-2"></i> View Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -185,86 +205,185 @@
     <!-- find us section starts here  -->
     <section class="container-fluid find-us-section">
         <div class="container py-5">
-            <div class="">
-                <h2 class="text-center pt-5 mb-4">Find Us Online</h2>
-                <p class="text-center">Shop our exclusive imitation jewelry collections on your favorite platforms.
-                </p>
-                <div class="d-flex flex-wrap justify-content-center align-items-center gap-3
-                mt-5">
-                    <div class="bg-warning p-5 rounded-2">
-                        <p>Amazon</p>
-                    </div>
-                    <div class="bg-warning p-5 rounded-2">
-                        <p>Amazon</p>
-                    </div>
-                    <div class="bg-warning p-5 rounded-2">
-                        <p>Amazon</p>
-                    </div>
-                    <div class="bg-warning p-5 rounded-2">
-                        <p>Amazon</p>
-                    </div>
-                    <div class="bg-warning p-5 rounded-2">
-                        <p>Amazon</p>
-                    </div>
+            <h2 class="text-center pt-4 mb-3 fw-bold">Find Us Online</h2>
+            <p class="text-center mb-4">
+                Shop our exclusive imitation jewelry collections on your favorite platforms.
+            </p>
+
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4">
+                <!-- Amazon -->
+                <div class="bg-warning p-4 px-5 rounded-3 text-center d-flex flex-column align-items-center shadow-sm">
+                    <i class="fab fa-amazon fa-2x mb-2"></i>
+                    <p class="mb-0 fw-semibold">Amazon</p>
+                </div>
+
+                <!-- Flipkart -->
+                <div
+                    class="bg-primary text-white p-4 px-5 rounded-3 text-center d-flex flex-column align-items-center shadow-sm">
+                    <i class="fas fa-shopping-bag fa-2x mb-2"></i>
+                    <p class="mb-0 fw-semibold">Flipkart</p>
+                </div>
+
+                <!-- Meesho -->
+                <div class="bg-pink text-white p-4 px-5 rounded-3 text-center d-flex flex-column align-items-center shadow-sm"
+                    style="background-color: #f52887;">
+                    <i class="fas fa-store fa-2x mb-2"></i>
+                    <p class="mb-0 fw-semibold">Meesho</p>
+                </div>
+
+                <!-- Myntra -->
+                <div
+                    class="bg-dark text-white p-4 px-5 rounded-3 text-center d-flex flex-column align-items-center shadow-sm">
+                    <i class="fas fa-tshirt fa-2x mb-2"></i>
+                    <p class="mb-0 fw-semibold">Myntra</p>
+                </div>
+
+                <!-- Snapdeal -->
+                <div
+                    class="bg-danger text-white p-4 px-5 rounded-3 text-center d-flex flex-column align-items-center shadow-sm">
+                    <i class="fas fa-tags fa-2x mb-2"></i>
+                    <p class="mb-0 fw-semibold">Snapdeal</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- find us section ends here  -->
 
     <!-- customer voices section starts here  -->
-    <section class="container-fluid what-we-deal">
-        <div class="container py-5">
-            <h2 class="text-center pt-3">Customer Voices</h2>
-            <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, hic voluptatum ex
-                maiores eligendi ad!</p>
+    <section class="container-fluid what-we-deal py-5">
+        <div class="container">
+            <h2 class="text-center mb-3">Customer Voices</h2>
+            <p class="text-center mb-5">Hear what our happy customers have to say about DD Enterprises’ exquisite
+                imitation jewelry.</p>
+
+            <!-- Testimonial Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-md-8">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3"
+                                    alt="Customer 1" width="100" height="100">
+                                <blockquote class="blockquote">
+                                    <p class="mb-4">"Absolutely loved the designs! The quality is top-notch, and I
+                                        received so many compliments."</p>
+                                    <footer class="blockquote-footer">Aarti Sharma, <cite title="Amazon">Amazon
+                                            Customer</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-md-8">
+                                <img src="https://randomuser.me/api/portraits/men/46.jpg" class="rounded-circle mb-3"
+                                    alt="Customer 2" width="100" height="100">
+                                <blockquote class="blockquote">
+                                    <p class="mb-4">"Great value for money! Stylish and elegant pieces that match
+                                        perfectly with my outfits."</p>
+                                    <footer class="blockquote-footer">Rahul Verma, <cite title="Flipkart">Flipkart
+                                            Buyer</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center align-items-center text-center">
+                            <div class="col-md-8">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle mb-3"
+                                    alt="Customer 3" width="100" height="100">
+                                <blockquote class="blockquote">
+                                    <p class="mb-4">"I bought from Meesho and was surprised by how premium the jewelry
+                                        felt. Will shop again!"</p>
+                                    <footer class="blockquote-footer">Neha Patel, <cite title="Meesho">Meesho
+                                            User</cite></footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
     <!-- customer voices section ends here  -->
 
     <!-- visit our store starts here  -->
-    <section class="container-fluid about-us-section">
+    <section class="container-fluid about-us-section header-bg">
         <div class="container py-5">
             <h2 class="text-center mb-3">Visit Our Store</h2>
-            <p class="text-center mb-3">Experience our collection in person. We look forward to welcoming you!</p>
-            <div class="row mt-5">
-                <div class="col-6">
-                    <div class="address-container border rounded p-3 bg-white">
-                        <h3>Our Location</h3>
-                        <div class="address mb-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <p class="m-0">Address:</p>
+            <p class="text-center mb-4">Experience our collection in person. We look forward to welcoming you!</p>
+
+            <div class="row gy-4">
+                <!-- Address Section -->
+                <div class="col-12 col-md-6">
+                    <div class="address-container border rounded p-4 bg-white h-100 shadow-sm">
+                        <h3 class="mb-4">Our Location</h3>
+
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="fas fa-map-marker-alt text-danger"></i>
+                                <strong>Address:</strong>
                             </div>
-                            <span>RC 225, Prashant Garden khora colony, Ghaziabad UP 201009</span>
+                            <p class="mb-0">RC 225, Prashant Garden, Khora Colony, Ghaziabad, UP 201009</p>
                         </div>
-                        <div class="phone mb-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fas fa-phone"></i>
-                                <p class="m-0">Phone:</p>
+
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="fas fa-phone text-success"></i>
+                                <strong>Phone:</strong>
                             </div>
-                            <span>+91 95760 30821</span>
+                            <p class="mb-0">+91 95760 30821</p>
                         </div>
-                        <div class="email mb-3">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fas fa-message"></i>
-                                <p class="m-0">Email:</p>
+
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="fas fa-envelope text-primary"></i>
+                                <strong>Email:</strong>
                             </div>
-                            <span>info@ddenterprises.net</span>
+                            <p class="mb-0">info@ddenterprises.net</p>
                         </div>
-                        <p>Hours: Mon - Sat: 10:00 AM - 7:00 PM, Sun: Closed</p>
+
+                        <div>
+                            <i class="fas fa-clock text-warning me-2"></i>
+                            <span><strong>Hours:</strong> Mon - Sat: 10:00 AM - 7:00 PM | Sun: Closed</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.69850403097!2d77.34313877447693!3d28.60882028515899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5170a209909%3A0xa8b606dc892b136a!2sJ85W%2BF7M%20thappad%20gate%2C%20Vandana%20Enclave%2C%20Block%20B%2C%20Khora%20Colony%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1749888337262!5m2!1sen!2sin"
-                        width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <!-- Map Section -->
+                <div class="col-12 col-md-6">
+                    <div class="rounded overflow-hidden shadow-sm">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.69850403097!2d77.34313877447693!3d28.60882028515899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5170a209909%3A0xa8b606dc892b136a!2sJ85W%2BF7M%20thappad%20gate%2C%20Vandana%20Enclave%2C%20Block%20B%2C%20Khora%20Colony%2C%20Sector%2062%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1749888337262!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-
         </div>
     </section>
+
     <!-- visit our store ends here  -->
 
     <!-- contact us section starts here  -->
@@ -299,9 +418,6 @@
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-dd-enterprise px-4">Send Message</button>
-                        </div>
-                        <div class="text-center mt-3">
-                            <button type="submit" class="btn btn-success px-4">Chat On Whats'a app</button>
                         </div>
                     </form>
                 </div>

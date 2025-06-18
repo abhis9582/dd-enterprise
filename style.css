@@ -1,16 +1,31 @@
+@font-face {
+    font-family: 'NewEsprit';
+    src: url('fonts/new_esprit_itc_display_bold/new_esprit_itc_display_bold.ttf') format('truetype');
+}
+
 :root {
     --header-bg: #F7EEF1;
     --heading-color: #80011E;
     --what-we-deal-background: #EBC6CE;
 }
-
-header {
-    background-color: var(--header-bg);
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'NewEsprit', sans-serif !important;
+}
+body {
+    font-family: sans-serif !important;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
 }
 
 .header-bg {
-    background-color: var(--header-bg);
+    background-color: var(--header-bg) !important;
 }
+
+.contact-us-section{
+    background-color: #EBC6CE !important;
+}
+
 .btn-dd-enterprise {
     background: var(--heading-color) !important;
     color: #fff !important;
@@ -20,6 +35,7 @@ header {
     font-size: 3.5rem;
     font-weight: bold;
     color: var(--heading-color);
+    font-family: 'NewEsprit', sans-serif !important;
 }
 
 .hero-section {
@@ -49,6 +65,6 @@ header {
     object-fit: cover;
 }
 
-.find-us-section{
+.find-us-section {
     background: var(--header-bg);
 }
