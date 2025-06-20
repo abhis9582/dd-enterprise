@@ -71,16 +71,10 @@ body {
 
 .reviews-slider-section {
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 0px auto;
   padding: 20px;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-}
-
-.reviews-slider-section h2 {
-  font-size: 2.4rem;
-  margin-bottom: 30px;
-  color: #111;
 }
 
 .slider-wrapper {
