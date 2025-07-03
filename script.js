@@ -75,7 +75,6 @@ function createCard(review) {
   const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
   return `
     <div class="review-card">
-      <img class="review-avatar" src="${review.avatar}" />
       <div class="review-name">${review.name}</div>
       <div class="review-stars">${stars}</div>
       <div class="review-text">"${review.text}"</div>
