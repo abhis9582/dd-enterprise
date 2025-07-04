@@ -121,8 +121,19 @@ body {
   font-weight: bold;
   font-size: 1.1rem;
   margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
+.review-name p{
+  font-size: 5px !important;
+  font-weight: 500;
+  background-color: #80011E;
+  color: #ffffff;
+  padding: 2px 10px;
+  border-radius: 10px;
+  font-style: italic;
+}
 .review-stars {
   color: #ffc107;
   font-size: 1.2rem;
