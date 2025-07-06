@@ -13,8 +13,11 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
-</head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
 
 <body>
@@ -32,22 +35,22 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#about-us">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Marketplaces</a>
+                    <a class="nav-link" href="#marketplaces">Marketplaces</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Reviews</a>
+                    <a class="nav-link" href="#reviews">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Location</a>
+                    <a class="nav-link" href="#location">Location</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -83,7 +86,7 @@
     <!-- hero section ends here  -->
 
     <!-- about us section starts here  -->
-    <section class="about-us-section">
+    <section class="about-us-section" id="about-us">
         <h2 class="text-center pt-5">About DD Enterprises</h2>
         <p class="text-center px-3 px-md-0 mb-5">
             Crafting beauty and elegance through our exquisite imitation jewelry
@@ -140,7 +143,7 @@
     <!-- about us section ends here  -->
 
     <!-- what we deal section starts here  -->
-    <section class="container-fluid what-we-deal py-5">
+    <section class="container-fluid what-we-deal py-5" id="products">
         <div class="container">
             <!-- Heading Section -->
             <div class="text-center">
@@ -279,7 +282,7 @@
     <!-- what we deal section ends here  -->
 
     <!-- find us section starts here  -->
-    <section class="container-fluid find-us-section">
+    <section class="container-fluid find-us-section" id="marketplaces">
         <div class="container py-5">
             <h2 class="text-center pt-4 mb-3 fw-bold">Find Us Online</h2>
             <p class="text-center mb-4">
@@ -327,7 +330,7 @@
     <!-- find us section ends here  -->
 
     <!-- review section starts here  -->
-    <section class="container-fluid what-we-deal py-5">
+    <section class="container-fluid what-we-deal py-5" id="reviews">
         <div class="reviews-slider-section">
             <h2 class="mb-4">What Our Customers Say</h2>
 
@@ -347,7 +350,7 @@
     <!-- review section ends here  -->
 
     <!-- visit our store starts here  -->
-    <section class="container-fluid about-us-section header-bg">
+    <section class="container-fluid about-us-section header-bg" id="location">
         <div class="container py-5">
             <h2 class="text-center mb-3">Visit Our Store</h2>
             <p class="text-center mb-4">Experience our collection in person. We look forward to welcoming you!</p>
@@ -402,7 +405,7 @@
     <!-- visit our store ends here  -->
 
     <!-- contact us section starts here  -->
-    <section class="container-fluid what-we-deal">
+    <section class="container-fluid what-we-deal" id="contact">
         <div class="container py-5">
             <h2 class="text-center mb-4">Contact Us</h2>
             <div class="row mt-5">

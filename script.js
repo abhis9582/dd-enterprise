@@ -1,73 +1,63 @@
 const reviews = [
   {
-    name: "Riya Sharma",
+    name: "Sonal Kapoor",
     rating: 5,
-    text: "Absolutely love my purchase from DD Enterprises! The earrings I ordered look exactly like the pictures and arrived beautifully packaged. The quality is impressive for the price point - they feel sturdy and the finish is gorgeous. I've worn them several times and received so many compliments. Will definitely be ordering more pieces soon!",
-    avatar: "https://i.pravatar.cc/100?img=28"
+    date: "April 12, 2025",
+    text: "Love these earrings! Super cute and well-made. Fast delivery too. Will order more styles soon. Highly recommend DD Enterprises!",
+    avatar: "https://i.pravatar.cc/100?img=28",
   },
   {
-    name: "Priya Agarwal",
+    name: "Ishita Bansal",
     rating: 5,
-    text: "DD Enterprises exceeded my expectations! I ordered a complete jewelry set for my sister's wedding and everything was perfect. The intricate detailing on the necklace is stunning, and the matching earrings complete the look beautifully. Fast shipping and excellent customer service. Highly recommend!",
-    avatar: "https://i.pravatar.cc/100?img=29"
+    date: "March 28, 2025",
+    text: "Absolutely stunning jewelry! The rose gold bracelet is my new favorite. Compliments everywhere I go. Quality exceeds expectations for this price range. DD Enterprises rocks!",
+    avatar: "https://i.pravatar.cc/100?img=29",
   },
   {
-    name: "Neha Gupta",
+    name: "Nidhi Sharma",
     rating: 4,
-    text: "Great quality imitation jewelry at affordable prices. I bought three different bracelets and they all look elegant. The only reason I'm not giving 5 stars is that one of the clasps feels a bit loose, but overall very satisfied with my purchase from DD Enterprises.",
-    avatar: "https://i.pravatar.cc/100?img=16"
+    date: "June 5, 2025",
+    text: "Nice quality bangles at good price. One had minor scratch but overall happy with purchase. Good customer service response.",
+    avatar: "https://i.pravatar.cc/100?img=16",
   },
   {
-    name: "Ananya Patel",
-    rating: 5,
-    text: "I'm so impressed with the craftsmanship! The oxidized silver bangles I ordered are exactly what I was looking for. They have a vintage charm and the weight feels substantial. DD Enterprises has become my go-to for fashion jewelry. Will be back for more!",
-    avatar: "https://i.pravatar.cc/100?img=25"
-  },
-  {
-    name: "Pooja Singh",
+    name: "Rashmi Agarwal ",
     rating: 4,
-    text: "Beautiful pieces and great value for money. I ordered a statement necklace for a special occasion and it was perfect. The only minor issue was that delivery took a day longer than expected, but the quality made up for it. The jewelry photographs beautifully too!",
-    avatar: "https://i.pravatar.cc/100?img=26"
+    date: "May 19, 2025",
+    text: "Pretty good collection of trendy pieces. Ordered multiple items for gifting. Most were perfect, one earring had loose stone. Overall satisfied with service and quality.",
+    avatar: "https://i.pravatar.cc/100?img=25",
   },
   {
-    name: "Meera Gupta",
+    name: "Tanya Malhotra",
     rating: 5,
-    text: "Outstanding service and products! I've been a repeat customer for over a year now. The variety of designs is amazing and the quality is consistently good. My recent purchase of traditional jhumkas was particularly impressive - they look authentic and feel comfortable to wear all day.",
-    avatar: "https://i.pravatar.cc/100?img=19"
+    date: "July 2, 2025",
+    text: "Beautiful necklace set! Exactly as pictured. Packaging was lovely. My friends loved it at the wedding. Definitely ordering again!",
+    avatar: "https://i.pravatar.cc/100?img=26",
   },
   {
-    name: "Ritika Khanna",
+    name: "Priyanka Gupta",
     rating: 5,
-    text: "DD Enterprises has a wonderful collection of trendy pieces. I love the contemporary designs and the attention to detail. The ring I purchased fits perfectly and the stone setting is secure. Packaging was also very thoughtful with a lovely jewelry pouch included.",
-    avatar: "https://i.pravatar.cc/100?img=20"
+    date: "March 7, 2025",
+    text: "Amazing experience! The traditional choker necklace is gorgeous. Intricate work and comfortable fit. Arrived perfectly packaged. My go-to store for special occasion jewelry now.",
+    avatar: "https://i.pravatar.cc/100?img=19",
   },
   {
-    name: "Kavya Reddy",
+    name: "Sakshi Verma",
     rating: 3,
-    text: "Fantastic experience from start to finish! The website is easy to navigate, checkout was smooth, and my order arrived exactly when promised. The pearl necklace I bought looks so elegant and has received numerous compliments. The quality rivals much more expensive brands!",
-    avatar: "https://i.pravatar.cc/100?img=21"
+    date: "April 26, 2025",
+    text: "Okay quality for the price. Ring looks nice but feels slightly cheap. Delivery was on time. Decent for casual wear.",
+    avatar: "https://i.pravatar.cc/100?img=20",
   },
   {
-    name: "Deepika Jain",
-    rating: 3,
-    text: "Decent quality for the price range. I ordered a few pieces for everyday wear and they serve the purpose well. The finish could be slightly better on some items, but for fashion jewelry, it's acceptable. Customer service was responsive when I had a question about sizing.",
-    avatar: "https://i.pravatar.cc/100?img=27"
-  },
-  {
-    name: "Shreya Joshi",
-    rating: 5,
-    text: "I'm absolutely thrilled with my purchase! The chandelier earrings are gorgeous and surprisingly lightweight despite their size. The attention to detail is remarkable - each tiny bead and crystal is perfectly placed. DD Enterprises has earned a loyal customer in me!",
-    avatar: "https://i.pravatar.cc/100?img=23"
-  },
-  {
-    name: "Arya Mehta",
+    name: "Mansi Jain",
     rating: 4,
-    text: "Great selection and competitive prices. I bought a charm bracelet that's perfect for layering with my other jewelry. The charms are well-made and the bracelet itself is sturdy. Shipping was prompt and everything arrived in perfect condition. Would definitely shop here again!",
-    avatar: "https://i.pravatar.cc/100?img=24"
+    date: "June 18, 2025",
+    text: "Good value for money. Bought three rings and they all look elegant. Shipping was quick. Only issue was one ring slightly loose but still wearable.",
+    avatar: "https://i.pravatar.cc/100?img=21",
   },
 ];
 
-const track = document.getElementById('sliderTrack');
+const track = document.getElementById("sliderTrack");
 let index = 0;
 
 // Create review card
@@ -75,11 +65,19 @@ function createCard(review) {
   const stars = "★".repeat(review.rating) + "☆".repeat(5 - review.rating);
   return `
     <div class="review-card">
-      <div class="review-name">
-      ${review.name}
-      <p>Verified</p>
-      </div>
-      <div class="review-stars">${stars}</div>
+      <div class="review-header" style="display: flex; align-items: flex-start; gap: 12px;">
+        <div style="width: 40px; height: 40px; background-color: #f0f0f0; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <i class="fas fa-user" style="color: #555;"></i>
+        </div>
+        <div>
+          <div class="review-name">
+            <span style="font-weight: 600;">${review.name}</span>
+            <p>Verified</p>
+          </div>
+          </div>
+          </div>
+          <div class="review-date" style="font-size: 0.85em; color: #888;">${review.date}</div>
+      <div class="review-stars">${stars} <span class="text-dark review-number">${review.rating}.0</span></div>
       <div class="review-text">"${review.text}"</div>
     </div>
   `;
@@ -87,8 +85,9 @@ function createCard(review) {
 
 // Inject cards and clone first & last for infinite loop
 function initSlider() {
-  const allCards = reviews.map(createCard).join('');
-  track.innerHTML = createCard(reviews[reviews.length - 1]) + allCards + createCard(reviews[0]);
+  const allCards = reviews.map(createCard).join("");
+  track.innerHTML =
+    createCard(reviews[reviews.length - 1]) + allCards + createCard(reviews[0]);
   index = 1;
   updateSlider();
 }
@@ -102,10 +101,10 @@ function moveRight() {
   if (index === reviews.length + 1) {
     setTimeout(() => {
       index = 1;
-      track.style.transition = 'none';
+      track.style.transition = "none";
       updateSlider();
       setTimeout(() => {
-        track.style.transition = 'transform 0.5s ease';
+        track.style.transition = "transform 0.5s ease";
       });
     }, 500);
   }
@@ -120,10 +119,10 @@ function moveLeft() {
   if (index === 0) {
     setTimeout(() => {
       index = reviews.length;
-      track.style.transition = 'none';
+      track.style.transition = "none";
       updateSlider();
       setTimeout(() => {
-        track.style.transition = 'transform 0.5s ease';
+        track.style.transition = "transform 0.5s ease";
       });
     }, 500);
   }
@@ -131,7 +130,7 @@ function moveLeft() {
 
 // Apply transform
 function updateSlider() {
-  const cardWidth = document.querySelector('.review-card').offsetWidth + 30;
+  const cardWidth = document.querySelector(".review-card").offsetWidth + 30;
   track.style.transform = `translateX(-${cardWidth * index}px)`;
 }
 

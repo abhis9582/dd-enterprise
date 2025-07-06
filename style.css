@@ -2,7 +2,6 @@
     font-family: 'NewEsprit';
     src: url('fonts/new_esprit_itc_display_bold/new_esprit_itc_display_bold.ttf') format('truetype');
 }
-
 :root {
     --header-bg: #F7EEF1;
     --heading-color: #80011E;
@@ -123,16 +122,19 @@ body {
   margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .review-name p{
-  font-size: 5px !important;
-  font-weight: 500;
+  font-size: 8px !important;
+  font-weight: 400;
   background-color: #80011E;
   color: #ffffff;
   padding: 2px 10px;
   border-radius: 10px;
   font-style: italic;
+  margin: 0px;
+  margin-left: 20px;
 }
 .review-stars {
   color: #ffc107;
@@ -169,4 +171,8 @@ body {
 .slider-btn.right {
   position: absolute;
   right: 0;
+}
+
+.review-number {
+  font-size: 12px;
 }
